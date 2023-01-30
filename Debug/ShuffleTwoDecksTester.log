@@ -1,0 +1,50 @@
+﻿  Source.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1208,54): error C2794: 'iterator_category': is not a member of any direct or indirect base class of 'std::iterator_traits<_Iter>'
+          with
+          [
+              _Iter=std::reference_wrapper<const std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1229): message : see reference to alias template instantiation 'std::_Iter_cat_t<std::reference_wrapper<const std::string>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1421): message : see reference to variable template 'const bool _Is_random_iter_v<std::reference_wrapper<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const > >' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107): message : see reference to function template instantiation 'auto std::_Idl_distance<_InIt,_InIt>(const _Iter &,const _Iter &)' being compiled
+          with
+          [
+              _InIt=std::reference_wrapper<const std::string>,
+              _Iter=std::reference_wrapper<const std::string>
+          ]
+C:\Users\thees\source\repos\ShuffleTwoDecksTester\Source.cpp(61): message : see reference to function template instantiation '_OutIt std::copy<_Ty,std::ostream_iterator<std::string,char,std::char_traits<char>>>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=std::ostream_iterator<std::string,char,std::char_traits<char>>,
+              _Ty=std::reference_wrapper<const std::string>,
+              _InIt=std::reference_wrapper<const std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1229,13): error C2938: 'std::_Iter_cat_t' : Failed to specialize alias template
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1229): error C2062: type 'unknown-type' unexpected
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1421,1): error C3376: 'std::_Is_random_iter_v': only static data member templates are allowed
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1421,43): error C2059: syntax error: ')'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1421,1): error C2143: syntax error: missing ';' before '{'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1201,55): error C2794: 'difference_type': is not a member of any direct or indirect base class of 'std::iterator_traits<_Iter>'
+          with
+          [
+              _Iter=std::reference_wrapper<const std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1422): message : see reference to alias template instantiation 'std::_Iter_diff_t<std::reference_wrapper<const std::string>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1422,1): error C2938: 'std::_Iter_diff_t' : Failed to specialize alias template
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1422,58): error C2676: binary '-': 'const _Iter' does not define this operator or a conversion to a type acceptable to the predefined operator
+          with
+          [
+              _Iter=std::reference_wrapper<const std::string>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1423,1): error C2181: illegal else without matching if
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1424,1): error C3487: 'std::_Distance_unknown': all return expressions must deduce to the same type: previously it was 'void'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1424,9): error C2562: 'std::_Idl_distance': 'void' function returning a value
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1419): message : see declaration of 'std::_Idl_distance'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107,26): error C2672: '_Get_unwrapped_n': no matching overloaded function found
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107,1): error C2893: Failed to specialize function template 'decltype(auto) std::_Get_unwrapped_n(_Iter &&,const _Diff)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1340): message : see declaration of 'std::_Get_unwrapped_n'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107,1): message : With the following template arguments:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107,1): message : '_Iter=_OutIt &'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107,1): message : '_Diff=void'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4107,16): error C2737: '_UDest': const object must be initialized
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(4108,1): error C3536: '_UDest': cannot be used before it is initialized
