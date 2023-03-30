@@ -115,8 +115,18 @@ int main() {
 	for (int j = 0; j <= 4; j++) {
 		vector<std::string> hand;
 		hand.push_back(v[j]);
-		const string enum card = { "Dark_Ruler_Ha_Des",
-					  "Monster_Reborn",
+		const enum card = { Dark_Ruler_Ha_Des, Monster_Reborn, Lightning_Vortex, Solemn_Judgement,
+	Enemy_Controller,Contract_With_The_Dark_Master,Brain_Control,Monster_Reincarnation,Goblin_Zombie,
+	Berserk_Dragon, A_Deal_With_Dark_Ruler, Newdoria, Opticlops,Deck_Devastation_Virus,Brain_Jacker,
+	Ectoplasmer, Double_Spell, Newdoria, Jowgen_The_Spiritualist, Return_From_The_Different_Dimension,
+	Card_Destruction, Mystical_Space_Typhoon, Headless_Knight, Archfiend_Soldier, My_Body_As_A_Shield,
+	Megamorph, Mask_Of_Darkness, Despair_From_The_Dark, Mystic_Plasma_Zone, Dark_Master_Zorc,
+    Dark_Necrofear, Possessed_Dark_Soul, Necroface, Sangan, Mirror_Force, Gernia, Shrink,Zoma_The_Spirit,
+	Zoma_The_Spirit_2copy, Sakuretsu_Armor, Heavy_Storm, Malice_Doll_Of_Demise };
+
+
+		const enum deck = { Dark_Ruler_Ha_Des = "Dark_Ruler_Ha_Des",
+					  Monster_Reborn = "Monster_Reborn",
 	"Lightning_Vortex",
 	"Solemn_Judgement",
 	"Enemy_Controller",
@@ -159,22 +169,22 @@ int main() {
 		 "Malice_Doll_Of_Demise" };
 
 		switch (card) {
-		case "Dark_Ruler_Ha_Des":
+		case Dark_Ruler_Ha_Des:
 			Dark_Ruler_Ha_Des_counter++;
 			break;
-		case "Monster_Reborn":
+		case Monster_Reborn:
 			Monster_Reborn_counter++;
 			break;
-		case "Lightning_Vortex":
+		case Lightning_Vortex:
 			Lightning_Vortex_counter++;
 			break;
-		case "Solemn_Judgement":
+		case Solemn_Judgement:
 			Solemn_Judgement_counter++;
 			break;
-		case "Emeny_Controller":
+		case Enemy_Controller:
 			Enemy_Controller_counter++;
 			break;
-		case "Control_With_The_Dark_Master":
+		case Contract_With_The_Dark_Master:
 			Contract_With_The_Dark_Master_counter++;
 			break;
 
